@@ -38,7 +38,7 @@ function DrawCard({ card }) {
             className="btn btn-danger float-right"
             onClick={deleteHandler}
           >
-            <span className="bi bi-trash"></span>
+            <span className="oi oi-trash"></span>
           </button>
         </section>
       </div>

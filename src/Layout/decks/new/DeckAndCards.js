@@ -62,7 +62,7 @@ function DeckAndCards() {
           onClick={handleDeckDelete}
           className="btn btn-danger mr-2 float-right"
         >
-          <span className="bi bi-trash "></span>
+          <span className="oi oi-trash "></span>
         </button>
       </div>
       <div>
