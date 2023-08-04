@@ -8,7 +8,7 @@ function NavBar({ items }) {
     <>
       <nav className="breadcrumb" aria-label="breadcrumb">
         <Link to="/" className="breadcrumb-item">
-          <span className="oi oi-home mr-1"></span>Home
+          <span className="bi bi-house mr-1"></span>Home
         </Link>
         {items.map((item) => {
           const isActive = item === items[items.length - 1];

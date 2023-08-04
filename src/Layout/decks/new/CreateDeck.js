@@ -83,10 +83,10 @@ function CreateDeck() {
             }}
           />
         </div>
-        <button type="reset" className="btn btn-secondary btn mr-2">
+        <button type="reset" className="btn btn-secondary mr-2">
           Cancel
         </button>
-        <button type="submit" className="btn btn-primary btn">
+        <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>

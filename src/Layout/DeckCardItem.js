@@ -25,7 +25,7 @@ function DeckCardItem({ deck }) {
   };
 
   return (
-    <div className="card border border-primary mt-3">
+    <div className="card border-primary mt-3">
       <div className="card-body">
         <h5 className="card-title">
           {deck.name}{" "}
@@ -37,22 +37,22 @@ function DeckCardItem({ deck }) {
           type="button"
           className="btn btn-secondary btn-lg mr-1"
         >
-          <span className="oi oi-eye"></span> View
+          <span className="bi bi-eye"></span> View
         </Link>
         <Link
           to={`/decks/${id}/study`}
           type="button"
           className="btn btn-primary btn-lg"
         >
-          <span className="oi oi-book"></span> Study
+          <span className="bi bi-book"></span> Study
         </Link>
         <button
           type="button"
           onClick={handleDeckDelete}
-          className="btn btn-danger mr-2 float-right"
+          className="btn btn-danger mr-2 float-end" // Try float-right if this doesnt work
           disabled={isDeleting} // Updated the variable name here
         >
-          <span className="oi oi-trash"></span>{" "}
+          <span className="bi bi-trash"></span>{" "}
           {isDeleting ? "Deleting..." : "Delete"}{" "}
           {/* Updated the variable name here */}
         </button>

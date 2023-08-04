@@ -57,7 +57,7 @@ function AddCard() {
 
         <Link
           to={`/decks/${deckId}`}
-          className="form-button btn btn-secondary btn-lg mr-2"
+          className="btn btn-secondary btn-lg mr-2"
         >
           Done
         </Link>

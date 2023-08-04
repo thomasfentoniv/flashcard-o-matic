@@ -32,13 +32,13 @@ function DrawCard({ card }) {
             to={`${url}/cards/${card.id}/edit`}
             className="btn btn-secondary btn mr-2"
           >
-            <span className="oi oi-pencil"></span> Edit
+            <span className="bi bi-pencil"></span> Edit
           </Link>
           <button
-            className="btn btn-danger float-right"
+            className="btn btn-danger float-end"
             onClick={deleteHandler}
           >
-            <span className="oi oi-trash"></span>
+            <span className="bi bi-trash"></span>
           </button>
         </section>
       </div>

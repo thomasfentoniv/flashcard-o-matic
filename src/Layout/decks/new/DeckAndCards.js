@@ -43,26 +43,26 @@ function DeckAndCards() {
         <Link
           to={`${url}/edit`}
           type="button"
-          className="btn btn-secondary btn mr-2"
+          className="btn btn-secondary mr-2"
         >
-          <span className="oi oi-pencil"></span> Edit
+          <span className="bi bi-pencil"></span> Edit
         </Link>
-        <Link to={`${url}/study`} className="btn btn-primary btn mr-2">
-          <span className="oi oi-book"></span> Study
+        <Link to={`${url}/study`} className="btn btn-primary mr-2">
+          <span className="bi bi-book"></span> Study
         </Link>
         <Link
           to={`${url}/cards/new`}
           type="button"
-          className="btn btn-primary btn mr-2"
+          className="btn btn-primary mr-2"
         >
-          <span className="oi oi-plus"></span> Add Cards
+          <span className="bi bi-plus"></span> Add Cards
         </Link>
         <button
           type="button"
           onClick={handleDeckDelete}
-          className="btn btn-danger  mr-2 float-right"
+          className="btn btn-danger mr-2 float-end"
         >
-          <span className="oi oi-trash "></span>
+          <span className="bi bi-trash "></span>
         </button>
       </div>
       <div>
