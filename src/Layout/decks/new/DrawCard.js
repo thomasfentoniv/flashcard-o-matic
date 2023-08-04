@@ -35,7 +35,7 @@ function DrawCard({ card }) {
             <span className="bi bi-pencil"></span> Edit
           </Link>
           <button
-            className="btn btn-danger float-end"
+            className="btn btn-danger float-right"
             onClick={deleteHandler}
           >
             <span className="bi bi-trash"></span>

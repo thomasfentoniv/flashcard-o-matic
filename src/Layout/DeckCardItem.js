@@ -49,7 +49,7 @@ function DeckCardItem({ deck }) {
         <button
           type="button"
           onClick={handleDeckDelete}
-          className="btn btn-danger mr-2 float-end" // Try float-right if this doesnt work
+          className="btn btn-danger mr-2 float-right" // Try float-right if this doesnt work
           disabled={isDeleting} // Updated the variable name here
         >
           <span className="bi bi-trash"></span>{" "}
