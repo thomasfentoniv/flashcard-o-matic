@@ -8,7 +8,6 @@ import NotFound from "../../NotFound";
 
 function DeckAndCards() {
   const [deck, setDeck] = useState({});
-  // const [cards,setCards]=useState([]);
   const { deckId } = useParams();
   const { url } = useRouteMatch();
   const history = useHistory();
@@ -41,13 +40,21 @@ function DeckAndCards() {
         <NavBar items={[deck.name]} />
         <h2>{deck.name}</h2>
         <p>{deck.description}</p>
-        <Link to={`${url}/edit`} type="button" className="btn btn-secondary btn mr-2">
+        <Link
+          to={`${url}/edit`}
+          type="button"
+          className="btn btn-secondary btn mr-2"
+        >
           <span className="oi oi-pencil"></span> Edit
         </Link>
         <Link to={`${url}/study`} className="btn btn-primary btn mr-2">
           <span className="oi oi-book"></span> Study
         </Link>
-        <Link to={`${url}/cards/new`} type="button" className="btn btn-primary btn mr-2">
+        <Link
+          to={`${url}/cards/new`}
+          type="button"
+          className="btn btn-primary btn mr-2"
+        >
           <span className="oi oi-plus"></span> Add Cards
         </Link>
         <button

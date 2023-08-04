@@ -1,8 +1,5 @@
 import React from "react";
 
-function DeckForm({fetchType}){
-
-
-}
+function DeckForm({ fetchType }) {}
 
 export default DeckForm;

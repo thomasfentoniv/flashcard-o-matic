@@ -37,7 +37,11 @@ function DeckList() {
 
   return (
     <div>
-      <Link to={`/decks/new`} type="button" className="btn btn-secondary btn-lg">
+      <Link
+        to={`/decks/new`}
+        type="button"
+        className="btn btn-secondary btn-lg"
+      >
         <span className="bi bi-plus-lg"></span> Create Deck
       </Link>
       {decks.map((deck) => (

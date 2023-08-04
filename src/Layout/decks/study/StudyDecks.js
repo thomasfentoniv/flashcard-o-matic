@@ -45,11 +45,19 @@ function StudyDecks({ cards }) {
         <p className="card-text">
           {flip ? cards[currentIndex].back : cards[currentIndex].front}
         </p>
-        <button type="button" className="btn btn-secondary btn mr-2" onClick={handleFlip}>
+        <button
+          type="button"
+          className="btn btn-secondary btn mr-2"
+          onClick={handleFlip}
+        >
           Flip
         </button>
         {flip && (
-          <button type="button" className="btn btn-primary btn" onClick={handleNext}>
+          <button
+            type="button"
+            className="btn btn-primary btn"
+            onClick={handleNext}
+          >
             Next
           </button>
         )}
@@ -59,4 +67,3 @@ function StudyDecks({ cards }) {
 }
 
 export default StudyDecks;
-

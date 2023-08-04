@@ -28,7 +28,9 @@ function EditDeck() {
       const lastIndex = abortControllers.length - 1;
       const lastAbortController = abortControllers[lastIndex];
       lastAbortController.abort();
-      setAbortControllers((prevControllers) => prevControllers.slice(0, lastIndex));
+      setAbortControllers((prevControllers) =>
+        prevControllers.slice(0, lastIndex)
+      );
     }
   };
 
@@ -36,7 +38,10 @@ function EditDeck() {
     event.preventDefault();
     abortPreviousCall();
     const newAbortController = new AbortController();
-    setAbortControllers((prevControllers) => [...prevControllers, newAbortController]);
+    setAbortControllers((prevControllers) => [
+      ...prevControllers,
+      newAbortController,
+    ]);
 
     const editedDeck = {
       id: deckId,

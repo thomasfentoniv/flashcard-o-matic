@@ -1,4 +1,4 @@
-import  React, { Fragment } from "react";
+import React, { Fragment } from "react";
 import { useRouteMatch } from "react-router";
 import { Link } from "react-router-dom";
 
@@ -13,14 +13,14 @@ function NavBar({ items }) {
         {items.map((item) => {
           const isActive = item === items[items.length - 1];
           return (
-            <Link 
-              key={item} 
-              className={`breadcrumb-item ${isActive ? "active" : ""}`} 
+            <Link
+              key={item}
+              className={`breadcrumb-item ${isActive ? "active" : ""}`}
               to={url}
             >
               {item}
             </Link>
-          )
+          );
         })}
       </nav>
     </>
@@ -28,4 +28,3 @@ function NavBar({ items }) {
 }
 
 export default NavBar;
-

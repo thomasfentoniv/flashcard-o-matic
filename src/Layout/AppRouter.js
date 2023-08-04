@@ -9,19 +9,19 @@ import EditDeck from "./decks/edit/EditDeck";
 import AddCard from "./cards/AddCard";
 import EditCard from "./cards/EditCard";
 
-function AppRouter(){
-    return(
-        <Switch>
-            <Route exact path="/" component={DeckList} />
-            <Route path="/decks/new" component={CreateDeck} />
-            <Route path="/decks/:deckId/study" component={Study} />
-            <Route path="/decks/:deckId/edit" component={EditDeck} />
-            <Route path="/decks/:deckId/cards/new" component={AddCard} />
-            <Route path="/decks/:deckId/cards/:cardId/edit" component={EditCard} />
-            <Route path="/decks/:deckId" component={DeckAndCards} />
-            <Route component={NotFound} />
-        </Switch>
-    );
+function AppRouter() {
+  return (
+    <Switch>
+      <Route exact path="/" component={DeckList} />
+      <Route path="/decks/new" component={CreateDeck} />
+      <Route path="/decks/:deckId/study" component={Study} />
+      <Route path="/decks/:deckId/edit" component={EditDeck} />
+      <Route path="/decks/:deckId/cards/new" component={AddCard} />
+      <Route path="/decks/:deckId/cards/:cardId/edit" component={EditCard} />
+      <Route path="/decks/:deckId" component={DeckAndCards} />
+      <Route component={NotFound} />
+    </Switch>
+  );
 }
 
 export default AppRouter;
